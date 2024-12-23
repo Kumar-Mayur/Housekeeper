@@ -1,0 +1,53 @@
+.customTable thead tr th{
+
+    font-size: 8px;
+}
+
+.customTable tr {
+    border-bottom: 1px solid black; /* Adjust the line width and color as needed */
+  }
+
+.changepassword{
+    margin-top: 2%;
+    font-size: 10px;
+    margin-left: 2%; 
+}
+
+.pass-button {
+    font-size: 16px;
+    padding: 10px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(161, 197, 248);
+  }
+  
+.updateprofile{
+    margin-top: 2%;
+    font-size: 10px;
+    margin-left: 58%; 
+}
+
+
+.prof-button {
+    font-size: 16px;
+    padding: 10px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(161, 197, 248);
+  }
+
+  .yourprofile{
+    margin-left: 1%;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .profiletable{
+    margin-left: 19%;
+    margin-top: 6%; 
+    background-color: rgb(207, 241, 245);
+    width: 1220px;
+    border-radius: 20px 0px 0px 0px;
+  }

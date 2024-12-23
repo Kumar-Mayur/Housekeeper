@@ -1,0 +1,84 @@
+<div class="sidenav" style="width: 18%;">
+  <br>
+  <div class="rollno"> Roll Number </div>
+  <br>
+  <div class="rollno2"> {{rollnumber}} </div>
+  <br><br>
+  <button class="ms-3 text-start" routerLinkActive="active" routerLink="/user/home">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-display icon-margin"
+      viewBox="0 0 16 16">
+      <path
+        d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z" />
+    </svg>
+
+    <span class="nav-text-margin"> Dashboard</span>
+  </button>
+  <button class="ms-3 text-start" routerLinkActive="active" routerLink="/user/request">
+    <fa-icon [icon]="AllotIcon" class="icon-margin"></fa-icon>
+
+    <span class="nav-text-margin"> Requests</span>
+  </button>
+  <button class="ms-3 text-start" routerLinkActive="active" routerLink="/user/complaints">
+    <fa-icon [icon]="ComplaintsIcon" class="icon-margin"></fa-icon>
+
+    <span class="nav-text-margin"> Feedback</span>
+  </button>
+  <button class="ms-3 text-start" routerLinkActive="active" routerLink="/user/profile">
+    <fa-icon [icon]="StudentIcon" class="icon-margin"></fa-icon>
+    <span class="nav-text-margin"> Profile</span>
+  </button>
+  <button class="ms-3 text-start"  data-bs-toggle="modal" data-bs-target="#userLogoutModal"
+  > <fa-icon [icon]="LogoutIcon" class="icon-margin"></fa-icon>
+    <span class="nav-text-margin"> Logout</span>
+  </button>
+</div>
+
+
+<div class="container">
+  <div style="margin-left:157px">
+    <img class="dashboardImage" [src]="'assets/images/studentDashBg.jpg'">
+
+    <div class="cleanRequestDiv">
+      <button style="background: none; border: none;" routerLinkActive="active" routerLink="/user/request">
+        <strong style="font-size: 15px;" class="text-muted ms-3 mt-2">CLEAN REQUESTS</strong> &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <fa-icon style="font-size: 16px; border-radius: 19px; color: #000000;"
+          [icon]="CleanRequestIcon"></fa-icon>
+        <br>
+        <strong class=""> {{complaintCount}} </strong>
+      </button>
+    </div>
+
+    <div class="complaintsDiv">
+      <button  class="feedback-count-user" routerLinkActive="active" routerLink="/user/complaints">
+        <strong style="font-size: 15px;" class="text-muted ms-3 mt-2">FEEDBACK</strong> &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <fa-icon
+          style="font-size: 16px; border-radius: 19px;  color: #000000;" [icon]="ComplaintsDivIcon"></fa-icon>
+        <br>
+        <strong class=""> {{feedbackCount}} </strong>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<!-- //LOGOUT  -->
+
+<!-- Modal -->
+<div class="modal fade" id="userLogoutModal" tabindex="-1" aria-labelledby="userLogoutModalLabel" aria-hidden="true"
+data-bs-backdrop="static" data-bs-keyboard="false">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+         Are you sure you want to Log Out ?
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-danger" (click)="logout()" data-bs-dismiss="modal">Log Out</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>

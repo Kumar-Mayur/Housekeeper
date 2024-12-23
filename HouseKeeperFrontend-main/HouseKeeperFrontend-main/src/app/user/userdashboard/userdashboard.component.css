@@ -1,0 +1,40 @@
+/* .customTable thead tr th{
+    font-size: 8px;
+} */
+
+.customTable tr {
+    border-bottom: 1px solid black; /* Adjust the line width and color as needed */
+  }
+  .th-text{
+    font-size: 14px;
+  }
+
+  .dashTable-div{
+    margin-left:290px; 
+    margin-top: 5%; 
+    margin-right: 3%; 
+    background-color: rgb(171 215 228); 
+    width: 80%;
+    font-size: 17px; 
+  }
+  .feedback-txt{
+    font-size: 16px; 
+    color: green;
+    
+  }
+  .yetAllot{
+    font-size: 10px; color: red;
+  }
+  .worker-name{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .provideFeedack-link{
+    text-decoration: none;
+
+  }
+
+  .provideFeedack-link:hover{
+     text-decoration: underline;
+     cursor: pointer;
+  }

@@ -1,0 +1,50 @@
+<div class="imageDiv">
+  <img class="img-fluid" src="../../assets/images/adminRegBg.jpg">
+
+  <div class="registrationDiv">
+    <div class="text-center text-white">Admin Registration</div>
+    <br>
+    <br>
+    <div class="formDiv">
+      <form (ngSubmit)="registerAdmin()" #registrationForm="ngForm">
+        <label for="username" class="formtext">Email</label>
+        <div class="form-group">
+          <br>
+          <input  type="text" id="username" [(ngModel)]="admin.username" name="username" required #usernameInput="ngModel" placeholder="Enter email">
+          <div *ngIf="usernameInput.invalid && (usernameInput.dirty || usernameInput.touched)" class="error-message">
+            Email is required
+          </div>
+          
+        </div>
+        <br>
+        <br>
+        <label for="password" class="formtext">Password</label>
+        <div class="form-group">
+          <br>
+          <input type="password" id="password" [(ngModel)]="admin.password" name="password" required #passwordInput="ngModel" placeholder="Enter Password">
+          <div *ngIf="passwordInput.invalid && (passwordInput.dirty || passwordInput.touched)" class="error-message">
+           Password is required
+          </div>
+        </div>
+        <br>
+        <br>
+        <label for="hostel" class="formtext">Hostel</label>
+        <div class="form-group">
+          <br>
+          <input type="text" id="hostel" [(ngModel)]="admin.hostel" name="hostel" required #hostelInput="ngModel" placeholder="Enter Hostel Name">
+          <div *ngIf="hostelInput.invalid && (hostelInput.dirty || hostelInput.touched)" class="error-message">
+            Hostel name is required
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="">
+          <button type="submit" class="btn btn-primary loginButton" [disabled]="registrationForm.invalid">Register</button>
+        </div>
+        <br>
+        <div>
+          <button class="adminbutton" (click)="goTologinPage()">Already having an Account! Login</button></div> 
+      </form>
+    </div>
+  </div>
+</div>

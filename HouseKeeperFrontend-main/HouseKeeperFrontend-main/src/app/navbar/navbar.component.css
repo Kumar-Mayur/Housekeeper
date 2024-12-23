@@ -1,0 +1,101 @@
+/* Style for the side navbar */
+.sidenav {
+    height: 100%;
+    width: 19%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(149 185 235);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style for the links inside the side navbar */
+.sidenav button {
+    padding: 20px 0px 20px 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #1c1a1a;
+    background-color: rgb(207, 241, 245);
+    display: block;
+    border: none;
+    border-radius: 3em;
+    width: 200px;
+    margin: 0px 0px 10px 0px;
+}
+
+
+/* Style for the active menu item */
+.sidenav button.active {
+    background-color: rgb(249 151 70);
+    color: black;
+}
+/* Style for the hover effect */
+.sidenav button:hover {
+    background-color: rgb(249 151 70);
+    color: #000;
+}
+.dashboard-div-margin{
+    margin-left: 11%;
+}
+
+.dashboardImage{
+    width: 110%;
+    height: 350px;
+    object-fit: fill;
+}
+.cleanRequestDiv{
+    padding: 5px 0px 5px 0px;
+    position: absolute;
+    top:50%;
+    left: 30%;
+    border-radius: 4px;
+    background-color:rgb(240 146 68);
+    width: 241px;
+    height: 60px;
+}
+.complaintsDiv{
+    padding: 5px 0px 5px 0px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    border-radius: 4px;
+    background-color: rgb(240 146 68);
+    width: 241px;
+    height: 60px;
+}
+
+.hostelname{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+     margin-top: 5%;
+}
+
+.hosteldata{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+     margin-top: 5%;
+}
+
+.username{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+     margin-top: 5%;
+     text-decoration: underline;
+    
+}
+.nav-text-margin{
+    margin-left: 5%;
+}
+.icon-margin{
+    margin-left: 5%;
+}

@@ -1,0 +1,100 @@
+/* Style for the side navbar */
+
+.sidenav {
+    height: 100%;
+    width: 15.8%;
+    position: fixed;
+    z-index: 1;
+      background-color:rgb(171 215 228);
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+/* Style for the links inside the side navbar */
+.sidenav button {
+    padding: 20px 0px 20px 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #1c1a1a;
+    background-color:rgb(77 178 208);
+    display: block;
+    display: block;
+    border: none;
+    border-radius: 3em;
+    width: 200px;
+    margin: 0px 0px 10px 0px;
+}
+
+/* Style for the active menu item */
+.sidenav button.active {
+background-color:rgb(227 146 67);
+
+    color: black;
+}
+/* Style for the hover effect */
+.sidenav button:hover {
+    background-color:rgb(227 146 67);
+    color: black;
+}
+
+.dashboardImage{
+    width: 207%;
+    height: 350px;
+    object-fit: fill;
+}
+.cleanRequestDiv{
+    position: absolute;
+    top: 52%;
+    left: 30%;
+    border-radius: 4px;
+    background-color: rgb(227 146 67);
+    width: 241px;
+    height: 60px;
+    padding: 5px 0px 0px 0px;
+}
+.complaintsDiv{
+    position: absolute;
+    top: 52%;
+    left: 60%;
+    border-radius: 4px;
+    background-color: rgb(227 146 67);
+    width: 241px;
+    height: 60px;
+    padding: 5px 0px 0px 0px;
+}
+
+.container {
+    display: flex;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.rollno{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+     margin-top: 5%;
+}
+
+.rollno2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+     margin-top: 5%;
+}
+
+.nav-text-margin{
+    margin-left: 5%;
+}
+.icon-margin{
+    margin-left: 5%;
+}
+.feedback-count-user{
+    background: none;
+     border: none;
+     cursor: not-allowed;
+     pointer-events: none;
+}
